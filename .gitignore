@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/AdvancedSharpAdbClient/obj/Release/netstandard2.0
+/AdvancedSharpAdbClient/obj/Release/net461
+/AdvancedSharpAdbClient/obj
