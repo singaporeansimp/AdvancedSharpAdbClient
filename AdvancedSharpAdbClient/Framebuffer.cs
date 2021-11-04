@@ -47,8 +47,7 @@ namespace AdvancedSharpAdbClient
             this.client = client;
 
             // Initialize the headerData buffer
-            var size = Marshal.SizeOf<FramebufferHeader>();
-            this.headerData = new byte[size];
+            this.headerData = new byte[52];
         }
 
         /// <summary>
@@ -113,14 +112,8 @@ namespace AdvancedSharpAdbClient
                 }
 
                 if (this.Data == null || this.Data.Length < this.Header.Size)
-                {
-                    // Optimization on .NET Core: Use the BufferPool to rent buffers
-                    if (this.Data != null)
-                    {
-                        ArrayPool<byte>.Shared.Return(this.Data, clearArray: false);
-                    }
-
-                    this.Data = ArrayPool<byte>.Shared.Rent((int)this.Header.Size);
+                { 
+                    this.Data = new byte[this.Header.Size];
                 }
 
                 // followed by the actual framebuffer content
@@ -149,11 +142,6 @@ namespace AdvancedSharpAdbClient
         /// <inheritdoc/>
         public void Dispose()
         {
-            if (this.Data != null)
-            {
-                ArrayPool<byte>.Shared.Return(this.Data, clearArray: false);
-            }
-
             this.headerData = null;
             this.headerInitialized = false;
             this.disposed = true;
