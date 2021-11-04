@@ -162,7 +162,7 @@ namespace AdvancedSharpAdbClient
 
             Bitmap bitmap = new Bitmap((int)this.Width, (int)this.Height, pixelFormat);
             BitmapData bitmapData = bitmap.LockBits(new Rectangle(0, 0, bitmap.Width, bitmap.Height), ImageLockMode.WriteOnly, pixelFormat);
-            Marshal.Copy(buffer, 0, bitmapData.Scan0, buffer.Length);
+            Marshal.Copy(buffer, 0, bitmapData.Scan0, (int) (this.Width * this.Height * (this.Bpp/8)));
             bitmap.UnlockBits(bitmapData);
 
             return bitmap;
@@ -186,12 +186,6 @@ namespace AdvancedSharpAdbClient
             if (buffer == null)
             {
                 throw new ArgumentNullException(nameof(buffer));
-            }
-
-            if (buffer.Length != this.Width * this.Height * (this.Bpp / 8))
-            {
-                throw new ArgumentOutOfRangeException(nameof(buffer), $"The buffer length {buffer.Length} does not match the expected buffer " +
-                    $"length for a picture of width {this.Width}, height {this.Height} and pixel depth {this.Bpp}");
             }
 
             if (this.Width == 0 || this.Height == 0 || this.Bpp == 0)
@@ -224,7 +218,7 @@ namespace AdvancedSharpAdbClient
                 uint alphaIndex = this.Alpha.Offset / 8;
 
                 // Loop over the array and re-order as required
-                for (int i = 0; i < buffer.Length; i += 4)
+                for (int i = 0; i < (this.Width * this.Height * (this.Bpp / 8)); i += 4)
                 {
                     byte red = buffer[i + redIndex];
                     byte blue = buffer[i + blueIndex];

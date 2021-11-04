@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\AdvancedSharpAdbClient\AdvancedSharpAdbClient\bin\Release\netstandard2.0\AdvancedSharpAdbClient.deps.json
+C:\Users\User\source\repos\AdvancedSharpAdbClient\AdvancedSharpAdbClient\bin\Release\netstandard2.0\AdvancedSharpAdbClient.dll
+C:\Users\User\source\repos\AdvancedSharpAdbClient\AdvancedSharpAdbClient\bin\Release\netstandard2.0\AdvancedSharpAdbClient.pdb
+C:\Users\User\source\repos\AdvancedSharpAdbClient\AdvancedSharpAdbClient\obj\Release\netstandard2.0\AdvancedSharpAdbClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\AdvancedSharpAdbClient\AdvancedSharpAdbClient\obj\Release\netstandard2.0\AdvancedSharpAdbClient.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\AdvancedSharpAdbClient\AdvancedSharpAdbClient\obj\Release\netstandard2.0\AdvancedSharpAdbClient.AssemblyInfo.cs
+C:\Users\User\source\repos\AdvancedSharpAdbClient\AdvancedSharpAdbClient\obj\Release\netstandard2.0\AdvancedSharpAdbClient.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\AdvancedSharpAdbClient\AdvancedSharpAdbClient\obj\Release\netstandard2.0\AdvancedSharpAdbClient.sourcelink.json
+C:\Users\User\source\repos\AdvancedSharpAdbClient\AdvancedSharpAdbClient\obj\Release\netstandard2.0\AdvancedSharpAdbClient.dll
+C:\Users\User\source\repos\AdvancedSharpAdbClient\AdvancedSharpAdbClient\obj\Release\netstandard2.0\AdvancedSharpAdbClient.pdb
+C:\Users\User\source\repos\AdvancedSharpAdbClient\AdvancedSharpAdbClient\obj\Release\netstandard2.0\AdvancedSharpAdbClient.csproj.AssemblyReference.cache

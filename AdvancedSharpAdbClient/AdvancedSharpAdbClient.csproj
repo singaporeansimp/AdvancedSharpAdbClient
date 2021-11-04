@@ -5,13 +5,13 @@
     <AssemblyTitle>.NET client for adb, the Android Debug Bridge (AdvancedSharpAdbClient)</AssemblyTitle>
     <Title>.NET client for adb, Android Debug Bridge (AdvancedSharpAdbClient)</Title>
     <VersionPrefix>1.5.0</VersionPrefix>
-    <Authors>The Android Open Source Project, Ryan Conrad, Quamotion and improved by yungd1plomat</Authors>
+    <Authors>The Android Open Source Project, Ryan Conrad, Quamotion and improved by yungd1plomat, modifications by singaporeansimp</Authors>
     <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
     <AssemblyName>AdvancedSharpAdbClient</AssemblyName>
     <AssemblyOriginatorKeyFile>AdvancedSharpAdbClient.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>false</SignAssembly>
     <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
-    <PackageId>AdvancedSharpAdbClient</PackageId>
+    <PackageId>AdvancedSharpAdbClient-singaporeansimp</PackageId>
     <PackageTags>android;adb;SharpAdbClient;AdvancedSharpAdbClient;</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Product>AdvancedSharpAdbClient: A .NET client for the Android Debug Bridge (adb)</Product>
@@ -21,10 +21,11 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Copyright>https://github.com/quamotion/madb</Copyright>
-    <RepositoryUrl>https://github.com/yungd1plomat/AdvancedSharpAdbClient</RepositoryUrl>
+    <RepositoryUrl>https://github.com/singaporeansimp/AdvancedSharpAdbClient</RepositoryUrl>
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
     <Version>1.5.0</Version>
-    <PackageProjectUrl>https://github.com/yungd1plomat/AdvancedSharpAdbClient</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/singaporeansimp/AdvancedSharpAdbClient</PackageProjectUrl>
+    <Company>Shortworm</Company>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net461|AnyCPU'">
